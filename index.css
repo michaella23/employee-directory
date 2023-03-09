@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+image {
+    max-width: 100%;
+}
+
+.header {
+    background: url("images/photos/Header.png"), url("images/photos/header-bg.png");
+    background-size: cover, cover;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center center, left top;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+}
+
+h1 {
+    font-family: 'Calistoga', cursive;
+    font-size: 3rem;
+    color: white;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.9);
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0;
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: .5rem
+}
+
+.main {
+    padding-top: 0.5em;
+    background-color: #F5F5F5;
+}
+
+.employee-block {
+    position: relative;
+    height: 525px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;   
+    text-align: center;
+    background-color: white;
+    margin: 1em;
+    padding: 1.5em;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.emp-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+}
+
+.bio {
+    text-align: left;
+    line-height: 1.5rem;
+    margin-bottom: 2em;
+}
+
+p {
+    margin-bottom: 1.5em;
+}
+
+.socials {
+    position: absolute;
+    bottom: 1.75em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link {
+    cursor: pointer;
+}
+
+.link:hover, .link:focus {
+    opacity: .5;
+}
+
+.social-icon {
+    padding: 0.1em 0.5em 0;
+}
+
+@media (min-width: 450px) {
+    h1 {
+        font-size: 4.5rem;
+    }
+    
+    .main {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .employee-block {
+        max-width: 350px;
+        margin: 0.5em;
+    }
+}
